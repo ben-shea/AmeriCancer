@@ -2,13 +2,16 @@
 title: "AmeriCancer"
 author: "Ben Shea, Sarah Tsay, and Kate Wright"
 date: "12/14/2020"
-header-includes:
-   - \usepackage{setspace}
-   - \doublespacing
-output: 
+output:
+  html_document:
+    toc: yes
+    df_print: paged
   pdf_document:
     number_sections: yes
     toc: yes
+header-includes:
+- \usepackage{setspace}
+- \doublespacing
 ---
 
 ```{r setup, include=FALSE, message = FALSE, warning=FALSE}
